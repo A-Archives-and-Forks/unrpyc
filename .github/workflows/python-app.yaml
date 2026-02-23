@@ -32,6 +32,8 @@ jobs:
         diff -ur testcases/expected testcases/compiled -x "*.rpyc"
         # compile un.rpyc/rpy/rpyb
         cd un.rpyc;
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
         ./compile.py -p 1
         cd ..
         # test all the different iterations of it
