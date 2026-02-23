@@ -7,7 +7,7 @@ creating a pickle which will run the decompiler when ren'py is loading all files
 code normally even runs.
 
 Building un.rpyc requires the `corrupy` package to (from https://github.com/CensoredUsername/corrupy).
-This is normally available as a submodule git submodule in this folder. 
+This can be installed via PyPI (`pip3 install -r requirements.txt`)
 
 Via various ways of optimization this module manages to fit the whole decompiler in a file less
 than 20 kB in size! This is smaller than some of the unrpyc source files.
